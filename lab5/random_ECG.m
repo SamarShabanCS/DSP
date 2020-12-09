@@ -1,5 +1,4 @@
-
-%% random ECG signal
+%random ECG signal
 
 clear; close all; clc;
 k = -6:15;

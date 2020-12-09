@@ -1,4 +1,4 @@
-%% load ECG signal
+%load ECG signal
 
 clear; close all; clc;
 load ecg_data.mat
