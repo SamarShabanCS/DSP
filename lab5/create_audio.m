@@ -11,19 +11,19 @@ disp('End of Recording.');
 x = getaudiodata(recObj1);      %to cach the recorded data
 audiowrite('test.wav', x, fs); %to store recorded data named as test.wav
 % to listen: two ways
-play(recObj1)
-sound(x,fs)
+play(recObj1);
+%sound(x,fs);
 
 %% read signal
 clc;close all;clear;
 [x,fs]=audioread('test.wav');
-%sound(3*x,fs);  %increase or decrease volume
-sound(5*x,0.7*fs); % speed signal using fs, try 1.5,0.7
+%sound(0.2*x,fs);  %increase or decrease volume
+sound(5*x,0.8*fs); % speed signal using fs, try 1.5,0.7
 
 %% plotting the Original audio signal
 
 N=fs*time;
-t=linspace(0,time,N);
+t=linspace(0,time,N);  %t=0:(1/fs):time
 plot(t,x)
 xlabel('Time (s)')
 ylabel('Amplitude')

@@ -8,4 +8,4 @@ y=sym('z');
 for i=1:n
    b=b+x(i)*y^(1-i); 
 end
-disp(b);
+disp(b)
